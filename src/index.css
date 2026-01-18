@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-lg;
+}
+
+.section {
+  @apply flex flex-col justify-center items-center w-5/6 max-md:w-full;
+}
+
+button {
+  @apply font-semibold;
+}
+
+.black-button {
+  @apply text-gray-50 bg-slate-900 hover:bg-slate-700 transition-all duration-200 px-6 py-2 rounded-md;
+}
+
+label {
+  @apply block mb-1 font-medium text-xl text-gray-500 max-md:text-sm;
+}
+
+.input-container {
+  @apply flex flex-col justify-center items-start w-4/6 mt-8;
+}
+
+.input {
+  @apply w-full px-4 py-2  bg-gray-200 outline-none rounded-md border-b-0 border-gray-400 focus:border-b-2 max-md:text-sm;
+}
+
+.li-btn {
+  @apply w-full text-left px-4 py-2 rounded-md cursor-pointer;
+}
+
+.burger-span {
+  @apply block h-0.5 w-8 bg-black transition-all duration-300;
+}
+
+.h2 {
+  @apply font-bold text-4xl max-md:text-xl;
+}
