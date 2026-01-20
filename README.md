@@ -10,7 +10,7 @@ Data is persisted using **Local Storage** so your projects won’t be lost on re
 
 - ➕ Create new projects
 - 📂 Select and view existing projects
-- 📝 Add tasks **specific to each project**
+- 📝 Add, Edit, Delete tasks **specific to each project**
 - ❌ Delete projects
 - 💾 Persistent data using `localStorage`
 - ⚡ Built with modern React (Hooks)

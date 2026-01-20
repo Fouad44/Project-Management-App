@@ -9,7 +9,7 @@ const SideBar = ({
 }) => {
   return (
     <aside
-      className={`flex mt-12 text-gray-50 bg-green-900 w-1/6 max-xl:w-2/6 max-md:w-4/6 rounded-tr-md pr-8 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 max-md:fixed max-md:h-screen transition-all duration-300`}
+      className={`flex md:mt-12 text-gray-50 bg-green-900 w-1/6 max-xl:w-2/6 max-md:w-4/6 rounded-tr-md pr-8 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 max-md:fixed max-md:h-screen transition-all duration-300`}
     >
       <nav className="flex flex-col ml-6 mt-4 w-full">
         <h2 className="my-8 text-fluid font-bold max-2xl:text-lg">
