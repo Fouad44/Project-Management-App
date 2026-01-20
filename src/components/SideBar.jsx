@@ -1,7 +1,7 @@
 const SideBar = ({
   onCreateProject,
   projects,
-  onProjectCreated,
+  // onProjectCreated,
   onSelectProject,
   selectedProjectId,
   isMenuOpen,
@@ -29,7 +29,7 @@ const SideBar = ({
             <li
               key={project.id}
               onClick={() => {
-                onProjectCreated();
+                // onProjectCreated();
                 onSelectProject(project.id);
                 onCloseMenu();
               }}

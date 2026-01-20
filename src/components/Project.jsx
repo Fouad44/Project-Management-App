@@ -1,22 +1,20 @@
 import Task from "./Task";
 
 const Project = ({
-  projects,
   selectedProjectId,
   onDelete,
   onAddTask,
   onDeleteTask,
+  selectedProject,
+  onSaveTask,
 }) => {
   if (!selectedProjectId) return;
-  const selectedProject = projects.find(
-    (project) => project.id === selectedProjectId,
-  );
 
   const rawDate = selectedProject.date;
   const date = new Date(rawDate);
   const formatted = date.toLocaleDateString("en-US", {
-    month: "short",
     day: "numeric",
+    month: "short",
     year: "numeric",
   });
 
@@ -40,6 +38,7 @@ const Project = ({
         onAddTask={onAddTask}
         selectedProject={selectedProject}
         onDeleteTask={onDeleteTask}
+        onSaveTask={onSaveTask}
       />
     </section>
   );
