@@ -1,7 +1,7 @@
 const BurgerMenu = ({ onToggleMenu, ref, isMenuOpen }) => {
   return (
     <div
-      className={`hidden absolute top-4 left-4 max-md:block z-50 transition-transform duration-300 ${isMenuOpen ? "translate-x-[56vw]" : "translate-x-0"}`}
+      className={`hidden absolute top-4 left-4 max-md:block z-50 transition-transform duration-300 ${isMenuOpen ? "max-md:translate-x-[56vw] max-[450px]:translate-x-[54vw] max-[358px]:translate-x-[52vw]" : "translate-x-0"}`}
     >
       <label
         htmlFor="menu"
